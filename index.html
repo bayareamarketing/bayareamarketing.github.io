@@ -16,14 +16,15 @@
     <script>
       $(document).ready(function () {
         $('#main_content').headsmart()
-      })
-      // Find all the elements on the page that use class="eml-protected"
-var allElements = document.getElementsByClassName("emlprotect");
+        // Find all the elements on the page that use class="eml-protected"
+        var allElements = document.getElementsByClassName("emlprotect");
 
-// Loop through all the elements, and update them
-for (var i = 0; i < allElements.length; i++) {
-    updateAnchor(allElements[i])
-}
+        // Loop through all the elements, and update them
+        for (var i = 0; i < allElements.length; i++) {
+            updateAnchor(allElements[i])
+        }
+      })
+      
 
 function updateAnchor(el) {
     // fetch the hex-encoded string
